@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Library from "./pages/Library";
 import Contribute from "./pages/Contribute";
 import Admin from "./pages/Admin";
+import Auth from "./pages/Auth";
 
 function Router() {
   return <Switch>
@@ -15,6 +16,7 @@ function Router() {
     <Route path="/bibliotheque" component={Library} />
     <Route path="/contribuer" component={Contribute} />
     <Route path="/admin" component={Admin} />
+    <Route path="/auth" component={Auth} />
     <Route path="/404" component={NotFound} />
     <Route component={NotFound} />
   </Switch>;
